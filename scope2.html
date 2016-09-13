@@ -1,0 +1,28 @@
+<script>
+
+var name = prompt("What's your name?", "");
+
+var count = parseInt(prompt("How many times would you like to see it?", ""));
+
+while(isNaN(count) == true)
+{
+	var count = prompt("Not quite.\n" + "Enter the *number* of times.", "");
+}
+
+//document.write(count);
+
+
+function displayName(localCount, localName)
+{
+	for(var x = 0; x < localCount ; x++)
+	{
+		document.write(localName + "<br>");		
+	}
+
+}
+
+//document.write(count);
+
+displayName(count, name);
+
+</script>
